@@ -44,8 +44,7 @@ When users ask you questions, always try to use your knowledge base first, if yo
 # Check OpenAI version is correct
 required_version = version.parse("1.1.1")
 current_version = version.parse(openai.__version__)
-# OPENAI_API_KEY = os.getenv['OPENAI_API_KEY']
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = os.getenv['OPENAI_API_KEY']
 
 if current_version < required_version:
   raise ValueError(f"Error: OpenAI version {openai.__version__}"
