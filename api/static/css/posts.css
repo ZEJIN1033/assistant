@@ -1,0 +1,268 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffc32b1e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: #430069;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 0px;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.title {
+    margin-left: 50px;
+}
+
+.back {
+    margin-right: 35px;
+}
+
+.add {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 83px;
+}
+
+.add img {
+    max-width: 40px; /* Replace with the maximum width you want */
+    max-height: 40px; /* Replace with the maximum height you want */
+    width: auto;
+    height: auto;
+    margin-right: 35px;
+}
+
+.navbarblank {
+    background-color: #430069;
+    margin-bottom: 110px;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #430069;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post h2 {
+    margin-top: 50px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.post p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.post-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    font-size: 0.8em;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+    background-color: #fafafa;
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.post {
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+    flex-basis: calc(50% - 100px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.post:hover {
+    transform: translateY(-5px); /* 向上移动 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25); /* 更大的阴影效果 */
+    cursor: pointer; /* 更改鼠标样式为手指形状 */
+}
+
+@media (max-width: 768px) {
+    .post {
+        flex-basis: 100%; /* 在小屏幕上，每个帖子占满整行 */
+    }
+}
+
+.post-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.post-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    padding-bottom: 100px;
+}
+/*-- comments --*/
+.comment {
+    padding: 0.5px;
+    margin-bottom: 5px;
+    background-color: #dfdcdc65;
+    border-radius: 5px;
+}
+
+#comments {
+    margin: 60px;
+}
+
+#comments h2 {
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    color: #19191a;
+}
+
+.comment strong {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #333;
+}
+/*-- comments --*/
+/*-- input --*/
+.textarea-comment {
+    width: 90.5%;
+    box-sizing: border-box;
+    margin-left: 60px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.submit-button {
+    position: absolute;
+    right: 6%;
+    top: 12.5%;
+    background-color: rgb(246, 199, 31);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 6%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    position: relative;
+}
+/*-- input --*/
+.form-group {
+    position: relative;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+.form-control {
+    margin-top: 1%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-content {
+    height: 225px;
+    margin-top: 1%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.post-button {
+    position: absolute;
+    right: 18%;
+    top: 1%;
+    background-color: rgb(246, 199, 31);
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 6%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.char-count {
+    position: absolute;
+    bottom: 2%; 
+    right: 18%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.btn-primary {
+    background-color: #430069 !important;;
+}

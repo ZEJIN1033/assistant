@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://p2.itc.cn/q_70/images03/20220523/5893432433b646dd93ac9b1723489985.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-home {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1031;
+}
+
+.top-banner {
+    background-color: rgb(242, 180, 23);
+    color: #202020;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    font-weight: bold;
+}
+
+.home-arrow {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #202020;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.home-arrow:hover {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #430069;
+    border-radius: 5px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+    width: 300px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #430069;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0%;
+    color: #333;
+    font-weight: bold;
+}
+
+.password-input, .text-input {
+    width: 100%;
+    padding: 10px; /* Padding for a bigger click area and aesthetic spacing */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box; /* To include padding and border in the element's total width and height */
+}
+
+.submit-button {
+    width: 100%; 
+    padding: 10px; /* Padding for aesthetics and larger click area */
+    background-color: #430069;
+    border: none;
+    border-radius: 3px; 
+    color: white; 
+    cursor: pointer; /* Cursor to indicate it's clickable */
+    margin-top: 10px; /* Space above the button */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #8d6f9f;
+}
+
+.register-link {
+    width: 100%; 
+    padding: 10px; 
+    border: none;
+    border-radius: 3px; 
+    color: #430069; 
+    cursor: pointer;
+    align-content: center;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.link-container {
+    display: flex;
+    justify-content: flex-end; /* This will align the link to the right */
+}
+
+.register-container {
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+    width: 300px;
+    text-align: left;
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #430069;
+}
+
+.form-rlabel {
+    display: block; 
+    margin-bottom: -6%;
+    color: #333; 
+    font-weight: bold;
+}
+
+.password-input, .text-input {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 3px; 
+    box-sizing: border-box; /* To include padding and border in the element's total width and height */
+}
+
+#flash-messages {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    z-index: 9999;
+    text-align: center;
+}
+
+
+.flash-message.invalidUsername-error {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+}
+.flash-message.invalidPassword-error {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+}
+.flash-message.login-error {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+}
+.flash-message.nonDigit-error {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+}
+
+.flash-message.success {
+    background-color: green;
+}
+
+.flash-message.invalid-error {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+}
+
+.flash-message.exist-error {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+}
+
+.flash-message.notLogin-error {
+    text-align: center;
+    color: white;
+    background-color: red;
+    padding: 10px 0;
+}

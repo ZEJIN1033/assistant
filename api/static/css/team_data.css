@@ -1,0 +1,218 @@
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-item {
+    cursor: pointer;
+}
+
+body {
+    font-family: system-ui;
+    background: white;
+    color: white;
+    text-align: center;
+}  
+
+.back-to-home {
+    margin-top: 1%;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1031;
+}
+
+.team-name {
+    position: fixed;
+    align-items: center;
+    left: 20px;
+    z-index: 1031;
+    margin-top: 1.7%;
+}
+
+.top-banner {
+    background-color: rgb(242, 180, 23);
+    color: #202020;
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    font-weight: bold;
+}
+
+.home-arrow {
+    align-items: center;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #202020;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: -22%;
+}
+
+.home-arrow:hover {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #430069;
+    border-radius: 5px;
+}
+
+.navbar ul {
+    width: 20%;
+    margin: auto;
+    border-radius: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: #430069;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.navbar li {
+    padding-right: 50px;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo_image {
+    width: 65px;
+}
+
+.tab-item:hover {
+    background: #7f658e;
+}
+
+.tab-item {
+    position: relative;
+    border-width: 12px 27px 12px;
+    border-style: solid;
+    border-color: transparent;
+    margin: 0 -15px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-mask-box-image: url("data:image/svg+xml,%3Csvg width='67' height='33' viewBox='0 0 67 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M27 0c-6.627 0-12 5.373-12 12v6c0 8.284-6.716 15-15 15h67c-8.284 0-15-6.716-15-15v-6c0-6.627-5.373-12-12-12H27z' fill='%23F8EAE7'/%3E%3C/svg%3E") 12 27 15;
+}
+
+.tab-item.active {
+    background: #916994;
+    z-index: 1;
+}
+
+#squad {
+    margin: auto;
+    overflow-x: auto;
+}
+
+.player {
+    color: #202020;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    max-width: 900px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.player th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.left {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.player th {
+    background-color: rgba(169, 145, 196, 0.307);
+    box-shadow: 0 1px 0px rgba(0,0,0,0.1);
+    color: #202020;
+    align-content: center;
+}
+
+.player tr:nth-child(even) {
+    background-color: #f7f2f7;
+}
+
+.player img.player-photo {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.infolabel1 td {
+    text-align: justify;
+    padding: 8px;
+    margin: 0 auto;            /* This centers the table horizontally */
+    text-align: center;
+    height: 80%;
+}
+
+.infolabel1 tr:last-child td {
+    border-bottom: 0;
+}
+
+.infolabel1 tr:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.infolabel1 td:first-child {
+    margin-right: 5%;
+}
+
+.infolabel1 {
+    color: black;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.infotable2 {
+    color: black;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.jianbian {
+    width: 70%;
+    background: rgba(169, 145, 196, 0.194);
+    color: #202020;
+    padding: 5px 17px;
+    font-size: 15px;
+    align-self: center;
+    box-shadow: 0 1px 0px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    font-size: 15px;
+}
+
+.subtitle tr:first-child,
+.subtitle tr:last-child {
+    border-bottom: 0;
+}
